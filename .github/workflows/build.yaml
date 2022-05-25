@@ -32,6 +32,7 @@ jobs:
       - run: choco install nasm
       - run: echo "C:\Program Files\NASM" >> $GITHUB_PATH
       - run: dir "C:\Program Files\NASM"
+      - run: $env:path -split ";"
       - run: nasm -v
       - run: make OS=msvc gmp-bootstrap
       - run: make OS=msvc gtest-bootstrap
