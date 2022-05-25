@@ -30,6 +30,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: choco install nasm
+      - run: choco install ninja
+      - run: ninja --version
       - run: nasm -v
       - run: make OS=msvc gmp-bootstrap
       - run: make OS=msvc gtest-bootstrap
