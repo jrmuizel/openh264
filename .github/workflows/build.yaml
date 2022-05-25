@@ -29,8 +29,9 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - uses: ilammy/setup-nasm@v1
+      - run: choco install nasm
       - run: make OS=msvc gmp-bootstrap
+      - run: make OS=msvc gtest-bootstrap
       - working-directory: ./build
         run: ./AutoBuildForWindows.bat
   
