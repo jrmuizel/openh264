@@ -30,13 +30,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: choco install nasm
+      # nasm is not installed into the $PATH so add it manually
       - run: echo "C:\Program Files\NASM" >> $env:GITHUB_PATH
-      - run: dir "C:\Program Files\NASM"
-      - run: $env:path -split ";"
       - run: nasm -v
       - run: make OS=msvc gmp-bootstrap
       - run: make OS=msvc gtest-bootstrap
       - working-directory: ./build
         run: ./AutoBuildForWindows.bat
+      - run: ./bin/Win32/Release/codec_unittest.exe
   
 
