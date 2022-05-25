@@ -26,7 +26,7 @@ jobs:
       - run: ./run_Test.sh BinaryCompare Zhling_1280x720.264
       
   windows:
-    runs-on: windows-2022
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
       - working-directory: ./build
