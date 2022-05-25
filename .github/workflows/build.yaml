@@ -30,6 +30,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - working-directory: ./build
-        run: AutoBuildForWindows.bat
+        run: ./AutoBuildForWindows.bat
   
 
