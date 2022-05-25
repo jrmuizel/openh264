@@ -29,7 +29,7 @@ jobs:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v2
-      - working-directory: build
+      - working-directory: ./build
         run: AutoBuildForWindows.bat
   
 
