@@ -26,10 +26,9 @@ jobs:
       - run: ./run_Test.sh BinaryCompare Zhling_1280x720.264
       
   windows:
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v2
-      - run: choco install msys2
-      - run: build/AutoBuildForWindows.bat
+      - run: (cd build; build/AutoBuildForWindows.bat)
   
 
