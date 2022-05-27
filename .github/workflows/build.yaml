@@ -51,3 +51,16 @@ jobs:
       - run: make gtest-bootstrap
       - run: make OS=linux CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ ARCH=arm64
       - run: qemu-aarch64 -L /usr/aarch64-linux-gnu/ ./codec_unittest
+
+  macos:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: brew install nasm
+      - run: nasm -v 
+      - run: c++ --version
+      - run: make gmp-bootstrap
+      - run: make gtest-bootstrap
+      - run: make
+      - run: ./codec_unittest
