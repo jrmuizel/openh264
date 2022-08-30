@@ -121,7 +121,7 @@ static const FileParam kFileParamArray[] = {
   {"res/NRF_MW_E.264", "866f267afd2ed1595bcb90de0f539e929c169aa4"},
   {"res/QCIF_2P_I_allIPCM.264", "9879ce127d3263cfbaf5211ab6657dbf0ccabea8"},
   { "res/SVA_BA1_B.264", "4cb45a99ae44a0a98b174efd66245daa1fbaeb47"},
-  {"res/SVA_BA2_D.264", "ac9e960015b96f83279840802f6637c61ee1c5b8"},
+  {"res/SVA_BA2_D.264", "9c9e960015b96f83279840802f6637c61ee1c5b8"},
   {"res/SVA_Base_B.264", "e6010d1b47aa796c1f5295b2563ed696aa9c37ab"},
   {"res/SVA_CL1_E.264", "4fe09ab6cdc965ea10a20f1d6dd38aca954412bb"},
   {"res/SVA_FM1_E.264", "1a114fbd096f637acd0c3fb8f35bdfa3bc275199"},
